@@ -1,0 +1,31 @@
+Netlist Report (From Document: Non-Inverting Amplifier)   (Printed Date: Thursday, August 09, 2018, 4:34:27 PM)
+-----------------------------------------------------------------------------
+Net                  Sheet            Component                 Pin          
+-----------------------------------------------------------------------------
+0                    Non-Inverting Am Ground                    1            
+                     plifier                                                 
+0                    Non-Inverting Am Ri                        2            
+                     plifier                                                 
+0                    Non-Inverting Am Rl                        1            
+                     plifier                                                 
+0                    Non-Inverting Am Ground                    1            
+                     plifier                                                 
+0                    Non-Inverting Am Ground                    1            
+                     plifier                                                 
+0                    Non-Inverting Am Ground                    1            
+                     plifier                                                 
+2                    Non-Inverting Am U1                        IN-          
+                     plifier                                                 
+2                    Non-Inverting Am Ri                        1            
+                     plifier                                                 
+2                    Non-Inverting Am Rf                        2            
+                     plifier                                                 
+3                    Non-Inverting Am U1                        IN+          
+                     plifier                                                 
+4                    Non-Inverting Am Rf                        1            
+                     plifier                                                 
+4                    Non-Inverting Am U1                        OUT          
+                     plifier                                                 
+4                    Non-Inverting Am Rl                        2            
+                     plifier                                                 
+-----------------------------------------------------------------------------

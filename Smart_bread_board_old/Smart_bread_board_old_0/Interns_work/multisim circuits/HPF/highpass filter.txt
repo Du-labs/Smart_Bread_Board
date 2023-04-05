@@ -1,0 +1,14 @@
+Netlist Report (From Document: highpass filter)   (Printed Date: Thursday, August 09, 2018, 4:53:31 PM)
+-----------------------------------------------------------------------------
+Net                  Sheet            Component                 Pin          
+-----------------------------------------------------------------------------
+1                    highpass filter  V1                        1            
+1                    highpass filter  C1                        1            
+2                    highpass filter  C1                        2            
+2                    highpass filter  R1                        1            
+GND                  highpass filter  V1                        2            
+GND                  highpass filter  R1                        2            
+GND                  highpass filter  GND                       GND          
+GND                  highpass filter  GND                       GND          
+GND                  highpass filter  GND                       GND          
+-----------------------------------------------------------------------------

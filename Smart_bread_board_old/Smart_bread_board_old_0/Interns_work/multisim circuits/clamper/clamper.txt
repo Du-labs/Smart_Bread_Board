@@ -1,0 +1,19 @@
+Netlist Report (From Document: clamper)   (Printed Date: August 09, 2018 14:31:43)
+----------------------------------------------------
+Net           Page        Component        Pin      
+----------------------------------------------------
+1             clamper     XSC1             1        
+1             clamper     C1               1        
+1             clamper     V2               1        
+2             clamper     C1               2        
+2             clamper     XSC1             2        
+2             clamper     R1               1        
+2             clamper     D1               K        
+3             clamper     D1               A        
+3             clamper     V1               1        
+GND           clamper     R1               2        
+GND           clamper     V1               2        
+GND           clamper     V2               2        
+GND           clamper     GND              GND      
+GND           clamper     GND              GND      
+GND           clamper     XSC1             4        

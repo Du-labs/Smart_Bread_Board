@@ -1,0 +1,53 @@
+Netlist Report (From Document: Opamp Common-Mode Rejection)   (Printed Date: Thursday, August 09, 2018, 4:35:45 PM)
+-----------------------------------------------------------------------------
+Net                  Sheet            Component                 Pin          
+-----------------------------------------------------------------------------
+0                    Opamp Common-Mod V2                        2            
+                     e Rejection                                             
+0                    Opamp Common-Mod R4                        2            
+                     e Rejection                                             
+0                    Opamp Common-Mod Ground                    1            
+                     e Rejection                                             
+0                    Opamp Common-Mod Ground                    1            
+                     e Rejection                                             
+0                    Opamp Common-Mod Ground                    1            
+                     e Rejection                                             
+0                    Opamp Common-Mod Ground                    1            
+                     e Rejection                                             
+0                    Opamp Common-Mod Ground                    1            
+                     e Rejection                                             
+0                    Opamp Common-Mod E                         2            
+                     e Rejection                                             
+0                    Opamp Common-Mod V1                        1            
+                     e Rejection                                             
+1                    Opamp Common-Mod R2                        2            
+                     e Rejection                                             
+1                    Opamp Common-Mod U1                        OUT          
+                     e Rejection                                             
+2                    Opamp Common-Mod V1                        2            
+                     e Rejection                                             
+2                    Opamp Common-Mod U1                        VS-          
+                     e Rejection                                             
+3                    Opamp Common-Mod U1                        VS+          
+                     e Rejection                                             
+3                    Opamp Common-Mod V2                        1            
+                     e Rejection                                             
+4                    Opamp Common-Mod R1                        2            
+                     e Rejection                                             
+4                    Opamp Common-Mod U1                        IN-          
+                     e Rejection                                             
+4                    Opamp Common-Mod R2                        1            
+                     e Rejection                                             
+5                    Opamp Common-Mod R3                        1            
+                     e Rejection                                             
+5                    Opamp Common-Mod E                         1            
+                     e Rejection                                             
+5                    Opamp Common-Mod R1                        1            
+                     e Rejection                                             
+12                   Opamp Common-Mod R4                        1            
+                     e Rejection                                             
+12                   Opamp Common-Mod R3                        2            
+                     e Rejection                                             
+12                   Opamp Common-Mod U1                        IN+          
+                     e Rejection                                             
+-----------------------------------------------------------------------------

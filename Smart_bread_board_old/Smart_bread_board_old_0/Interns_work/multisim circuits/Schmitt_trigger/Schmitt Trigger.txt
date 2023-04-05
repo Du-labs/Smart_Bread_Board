@@ -1,0 +1,41 @@
+Netlist Report (From Document: 055 Schmitt Trigger)   (Printed Date: Thursday, August 09, 2018, 4:31:56 PM)
+-----------------------------------------------------------------------------
+Net                  Sheet            Component                 Pin          
+-----------------------------------------------------------------------------
+0                    055 Schmitt Trig Ground                    1            
+                     ger                                                     
+0                    055 Schmitt Trig V2                        2            
+                     ger                                                     
+0                    055 Schmitt Trig Ground                    1            
+                     ger                                                     
+0                    055 Schmitt Trig Ground                    1            
+                     ger                                                     
+0                    055 Schmitt Trig Ground                    1            
+                     ger                                                     
+0                    055 Schmitt Trig Ground                    1            
+                     ger                                                     
+0                    055 Schmitt Trig V1                        1            
+                     ger                                                     
+0                    055 Schmitt Trig R2                        1            
+                     ger                                                     
+1                    055 Schmitt Trig U1                        IN-          
+                     ger                                                     
+2                    055 Schmitt Trig V1                        2            
+                     ger                                                     
+2                    055 Schmitt Trig U1                        VS-          
+                     ger                                                     
+3                    055 Schmitt Trig U1                        VS+          
+                     ger                                                     
+3                    055 Schmitt Trig V2                        1            
+                     ger                                                     
+4                    055 Schmitt Trig R1                        2            
+                     ger                                                     
+4                    055 Schmitt Trig U1                        OUT          
+                     ger                                                     
+5                    055 Schmitt Trig R1                        1            
+                     ger                                                     
+5                    055 Schmitt Trig R2                        2            
+                     ger                                                     
+5                    055 Schmitt Trig U1                        IN+          
+                     ger                                                     
+-----------------------------------------------------------------------------

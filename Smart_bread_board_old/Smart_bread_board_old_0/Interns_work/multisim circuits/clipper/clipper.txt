@@ -1,0 +1,13 @@
+Netlist Report (From Document: clipper)   (Printed Date: August 09, 2018 12:34:55)
+----------------------------------------------------
+Net           Page        Component        Pin      
+----------------------------------------------------
+1             clipper     V2               1        
+1             clipper     R1               1        
+2             clipper     D1               A        
+2             clipper     R1               2        
+2             clipper     XSC1             1        
+3             clipper     XSC1             4        
+3             clipper     V2               2        
+3             clipper     D1               K        
+GND           clipper     GND              GND      

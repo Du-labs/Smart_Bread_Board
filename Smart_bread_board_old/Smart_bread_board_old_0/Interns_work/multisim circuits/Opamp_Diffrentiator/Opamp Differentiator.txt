@@ -1,0 +1,29 @@
+Netlist Report (From Document: Opamp Differentiator)   (Printed Date: Thursday, August 09, 2018, 4:56:17 PM)
+-----------------------------------------------------------------------------
+Net                  Sheet            Component                 Pin          
+-----------------------------------------------------------------------------
+0                    Opamp Differenti Ground                    1            
+                     ator                                                    
+0                    Opamp Differenti Ground                    1            
+                     ator                                                    
+0                    Opamp Differenti U1                        IN+          
+                     ator                                                    
+0                    Opamp Differenti Ground                    1            
+                     ator                                                    
+1                    Opamp Differenti C1                        2            
+                     ator                                                    
+1                    Opamp Differenti Rf                        2            
+                     ator                                                    
+1                    Opamp Differenti U1                        IN-          
+                     ator                                                    
+2                    Opamp Differenti Rf                        1            
+                     ator                                                    
+2                    Opamp Differenti U1                        OUT          
+                     ator                                                    
+3                    Opamp Differenti C1                        1            
+                     ator                                                    
+3                    Opamp Differenti Rs                        1            
+                     ator                                                    
+4                    Opamp Differenti Rs                        2            
+                     ator                                                    
+-----------------------------------------------------------------------------

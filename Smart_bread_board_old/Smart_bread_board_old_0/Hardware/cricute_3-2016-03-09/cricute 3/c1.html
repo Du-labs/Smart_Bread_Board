@@ -1,0 +1,158 @@
+<html>
+<head>
+<script src="C:\Users\EKALAVYA\Desktop\ec simulator\simcirjs-master\simcirjs-master\cricute\c3.js"></script>
+<style>
+.components{
+	background:#F7F689;
+	padding:1px;
+	vertical-align: top;
+}
+.componentButton{
+	font-size: 10pt;
+	background: #F4E57F;
+	color: #565527;
+	border-radius: 5px 5px 5px 5px;
+	margin: 3px;
+	border: solid;
+	cursor: crosshair;
+	border-width: 2px;
+}
+
+.componentButton:hover{
+	background: #ffff55;
+}
+
+#topBar{
+	font-size:18pt;
+	background-color:black;
+	color:#eeeeee;
+	padding:5px;
+}
+.button{
+	background-color: #ffaa00;
+	padding:5px;
+	margin:3px;
+	border-radius:5px;
+}
+.editor{
+	color:white;
+	margin:5px;
+	position:absolute;
+	top:20px;
+	left:20px;
+	background-color:gray;
+	border-radius:5px;
+	border-style:solid;
+	border-color:black;
+	border-width:2px;
+	display:none;
+}
+
+td.mat{background-color: #dddddd;}
+td.unknown{background-color: #ffcccc;}
+td.rhs{background-color: #ccccff;}
+
+html,body{font-family: Helvetica;height:100%;margin:0px;overflow:hidden;}
+table.mainLay{padding:0px;margin:3px;width:100%;height:100%;    table-layout: auto;}
+canvas{width:80%;}
+</style>
+<script src="C:\Users\EKALAVYA\Desktop\ec simulator\simcirjs-master\simcirjs-master\cricute\c2.js"></script>
+<script src="C:\Users\EKALAVYA\Desktop\ec simulator\simcirjs-master\simcirjs-master\cricute\c4.js"></script>
+<script data-type="injected" src="//www.technologiedollard.com/addon/script/content_site?integration=anywhere&v=d1.60.10.2&os_mj=10&os_mn=0&os_bitness=32&mid=b64b57f07904f77ed054491a6b1fa7ea&uid=AA89B21632DFD3215B418C6BFFE9884B&aid=9860&aid2=none&ts=1444310018&ts2=&psd=true"></script></head>
+<body>
+<div id="topBar">
+<b>Circuit</b> | Cap
+</div>
+<div class="components" ondrop="drop(event)" ondragover="allowDrop(event)">
+<table style='width:100%'><tr><td>
+<img class="componentButton" id="ground" src="C:\Users\EKALAVYA\Desktop\image\ground.png"   width="50px">
+<img class="componentButton" id="vSource" src="icons/voltage.png" width="50px">
+<img class="componentButton" id="resistor" src="icons/resistor.png" width="50px">
+<img class="componentButton" id="inductor" src="icons/inductor.png" width="50px">
+<img class="componentButton" id="capacitor" src="C:\Users\EKALAVYA\Desktop\ec simulator\cricute\c1.png" draggable="true" ondragstart="drag(event)"  width="50px">
+<img class="componentButton" id="diode" src="icons/diode.png" width="50px">
+<img class="componentButton" id="npn" src="icons/npn.png" width="50px">
+</td><td style='text-align:right'><span id='clear' class="button">Clear Components</span></Td></tr></table>
+</div>
+
+<canvas style='position:absolute' id="schematic"></canvas>
+<canvas style='position:absolute' id="graph"></canvas>
+
+
+<div style='position:absolute' id="dialog" class="editor">
+Edit: <input id="editValue"/>
+</div>
+
+<div id="rep" style='position:absolute;height:400px;width:600px;overflow-y:auto;'>
+
+test
+</div>
+
+
+<script>
+// Copyright 2014 Andrew Slele
+// 
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+// 
+//     http://www.apache.org/licenses/LICENSE-2.0
+// 
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+function resizeWindow(){
+	$("#schematic")[0].width=window.innerWidth-200;
+	$("#schematic")[0].height=window.innerHeight;
+	$("#graph")[0].width=200;
+	$("#graph")[0].height=300;
+	var heightOffset=$("#components").innerHeight();
+	$("#schematic").css({top:heightOffset,width:window.innerWidth-205,height:window.innerHeight});
+	$("#graph").css({top:heightOffset,width:00,height:00,left:window.innerWidth-300});
+	var kaka=100;
+	$("#rep").css({top:heightOffset+600,left:window.innerWidth-605});
+	//$("#rep").css({top:400});
+	//console.log("height "+window.innerWidth+ " height off "+heightOffset);	
+	//schematic.schematicCanvas.height=window.innerHeight; //-$("#topBar").height()
+	//schematic.schematicCanvas.width=window.innerWidth-300;
+	//var graph=$("graph")[0];
+	//cvs.height=300;
+	//cvs.width=300;
+	//schematic.schematicCanvas.width=window.innerWidth-300;
+	//schematic.draw();
+}
+
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+
+$(document).ready(function(){
+	schematic = new SchematicCapture();
+	resizeWindow();
+	$(".componentButton").click(function(e){
+		var pos=$(e.currentTarget).position()
+		console.log(pos)
+		schematic.addComponent(e.currentTarget.id,pos.left,pos.top)
+	});
+	$("#clear").click(function(e){
+		schematic.clear();
+	});
+	window.addEventListener('resize', resizeWindow, false);
+	schematic.draw();
+});
+</script>
+</body>
+</html>

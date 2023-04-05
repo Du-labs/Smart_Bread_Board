@@ -1,0 +1,122 @@
+Netlist Report (From Document: 067 Triangular-to-Sine-Wave Generator)   (Printed Date: Thursday, August 09, 2018, 4:32:53 PM)
+-----------------------------------------------------------------------------
+Net                  Sheet            Component                 Pin          
+-----------------------------------------------------------------------------
+0                    067 Triangular-t V2                        2            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+0                    067 Triangular-t Ground                    1            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+0                    067 Triangular-t Ground                    1            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+0                    067 Triangular-t R4                        2            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+0                    067 Triangular-t Ground                    1            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+0                    067 Triangular-t R1                        2            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+0                    067 Triangular-t Ground                    1            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+0                    067 Triangular-t Ground                    1            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+0                    067 Triangular-t Ground                    1            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+0                    067 Triangular-t V1                        1            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+1                    067 Triangular-t V2                        1            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+1                    067 Triangular-t U1                        VS+          
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+2                    067 Triangular-t V1                        2            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+2                    067 Triangular-t U1                        VS-          
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+3                    067 Triangular-t U1                        IN-          
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+3                    067 Triangular-t R3                        2            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+3                    067 Triangular-t D4                        K            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+3                    067 Triangular-t D3                        A            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+3                    067 Triangular-t R1                        1            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+4                    067 Triangular-t R5                        2            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+5                    067 Triangular-t D4                        A            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+5                    067 Triangular-t R3                        1            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+5                    067 Triangular-t D3                        K            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+5                    067 Triangular-t R6                        2            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+5                    067 Triangular-t D5                        A            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+5                    067 Triangular-t D6                        K            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+6                    067 Triangular-t D6                        A            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+6                    067 Triangular-t U1                        OUT          
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+6                    067 Triangular-t R6                        1            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+6                    067 Triangular-t R2                        1            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+6                    067 Triangular-t D5                        K            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+7                    067 Triangular-t D1                        K            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+7                    067 Triangular-t R4                        1            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+7                    067 Triangular-t D2                        A            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+7                    067 Triangular-t R2                        2            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+8                    067 Triangular-t U1                        IN+          
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+8                    067 Triangular-t D1                        A            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+8                    067 Triangular-t D2                        K            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+8                    067 Triangular-t R5                        1            
+                     o-Sine-Wave Gene                                        
+                     rator                                                   
+-----------------------------------------------------------------------------

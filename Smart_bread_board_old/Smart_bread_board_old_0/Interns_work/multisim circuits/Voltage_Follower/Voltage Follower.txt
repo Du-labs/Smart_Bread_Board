@@ -1,0 +1,37 @@
+Netlist Report (From Document: Voltage Follower)   (Printed Date: Thursday, August 09, 2018, 4:37:04 PM)
+-----------------------------------------------------------------------------
+Net                  Sheet            Component                 Pin          
+-----------------------------------------------------------------------------
+0                    Voltage Follower Ground                    1            
+0                    Voltage Follower V1                        1            
+0                    Voltage Follower V2                        2            
+0                    Voltage Follower Ground                    1            
+0                    Voltage Follower V3                        2            
+0                    Voltage Follower R1                        2            
+0                    Voltage Follower Ground                    1            
+0                    Voltage Follower Ground                    1            
+1                    Voltage Follower U1                        IN-          
+1                    Voltage Follower U2                        IN+          
+1                    Voltage Follower U1                        OUT          
+2                    Voltage Follower U3                        IN+          
+2                    Voltage Follower U2                        IN-          
+2                    Voltage Follower U2                        OUT          
+3                    Voltage Follower U3                        OUT          
+3                    Voltage Follower U4                        IN+          
+3                    Voltage Follower U3                        IN-          
+4                    Voltage Follower U4                        IN-          
+4                    Voltage Follower U4                        OUT          
+4                    Voltage Follower R1                        1            
+5                    Voltage Follower V1                        2            
+5                    Voltage Follower U3                        VS-          
+5                    Voltage Follower U1                        VS-          
+5                    Voltage Follower U4                        VS-          
+5                    Voltage Follower U2                        VS-          
+6                    Voltage Follower U1                        VS+          
+6                    Voltage Follower U2                        VS+          
+6                    Voltage Follower U3                        VS+          
+6                    Voltage Follower V2                        1            
+6                    Voltage Follower U4                        VS+          
+7                    Voltage Follower V3                        1            
+7                    Voltage Follower U1                        IN+          
+-----------------------------------------------------------------------------
